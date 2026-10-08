@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap");
+
+:root {
+  color-scheme: light;
+  --paper: #fbfaf7;
+  --ink: #22211f;
+  --muted: #696660;
+  --rule: #d9d6cf;
+  --accent: #7c3028;
+  --headline: "Libre Baskerville", Georgia, serif;
+  --body: "Source Serif 4", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.7;
+}
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
+a:hover { color: var(--accent); }
+h1, h2, h3 { font-family: var(--headline); font-weight: 400; line-height: 1.22; }
+.site-shell { width: min(100% - 40px, 760px); margin: 0 auto; }
+.site-header { padding: 34px 0 26px; border-bottom: 3px double var(--ink); }
+.site-name { font-family: var(--headline); font-size: 1.35rem; font-weight: 700; text-decoration: none; }
+.site-description { margin: 5px 0 0; color: var(--muted); font-size: 0.9rem; }
+main { min-height: 65vh; }
+.section-heading { padding: 48px 0 18px; border-bottom: 1px solid var(--rule); }
+.eyebrow, .post-date, .article-meta { color: var(--muted); font-family: Arial, sans-serif; font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase; }
+.eyebrow { margin: 0 0 8px; }
+.section-heading h1 { margin: 0; font-size: clamp(2rem, 6vw, 2.8rem); }
+.post-preview { padding: 25px 0 28px; border-bottom: 1px solid var(--rule); }
+.post-date { margin: 0 0 7px; }
+.post-preview h2 { margin: 0; font-size: clamp(1.45rem, 4vw, 1.9rem); }
+.post-preview h2 a { text-decoration: none; }
+.post-summary { margin: 9px 0 0; color: #484641; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0 0; padding: 0; list-style: none; }
+.tag-list li { color: var(--muted); font-family: Arial, sans-serif; font-size: 0.72rem; }
+.tag-list li:not(:last-child)::after { content: " ·"; padding-left: 7px; }
+.article { padding: 47px 0 60px; }
+.article-header { margin-bottom: 30px; }
+.article-header .post-date { margin: 0 0 12px; }
+.article-header h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 3.6rem); letter-spacing: -0.035em; }
+.article-deck { margin: 17px 0 8px; color: #484641; font-size: 1.18rem; line-height: 1.5; }
+.article-meta { margin: 15px 0 0; }
+.article-figure { margin: 30px 0; }
+.article-figure img, .article-body img { display: block; width: 100%; height: auto; }
+.article-figure figcaption { margin-top: 8px; color: var(--muted); font-size: 0.82rem; }
+.article-body { font-size: 1.08rem; }
+.article-body h2, .article-body h3 { margin-top: 1.8em; }
+.article-body p { margin: 0 0 1.25em; }
+.article-body blockquote { margin: 1.5em 0; padding-left: 1.1em; border-left: 3px solid var(--rule); color: #4b4944; }
+.article-body figure { margin: 1.8em 0; }
+.article-body figcaption { color: var(--muted); font-size: 0.84rem; }
+.post-navigation { display: flex; justify-content: space-between; gap: 24px; margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 0.9rem; }
+.site-footer { padding: 20px 0 35px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.8rem; }
+.site-footer p { margin: 0; }
+
+@media (max-width: 520px) {
+  body { font-size: 17px; }
+  .site-shell { width: min(100% - 32px, 760px); }
+  .post-navigation { flex-direction: column; }
+}

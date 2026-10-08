@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-markdown-blog",
+  "private": true,
+  "description": "A minimalist Markdown-powered Gatsby blog.",
+  "version": "1.0.0",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^5.14.0",
+    "gatsby-source-filesystem": "^5.14.0",
+    "gatsby-transformer-remark": "^6.14.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
